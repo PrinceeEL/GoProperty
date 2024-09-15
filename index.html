@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Properti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card h3 {
+            color: #34495e;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #333;
+        }
+        .filter-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .filter-section input, .filter-section select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 30%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dashboard Properti</h1>
+</header>
+
+<div class="container">
+
+    <div class="filter-section">
+        <input type="text" placeholder="Cari Lokasi">
+        <select>
+            <option value="">Jenis Properti</option>
+            <option value="rumah">Rumah</option>
+            <option value="apartemen">Apartemen</option>
+        </select>
+        <input type="text" placeholder="Harga Maksimum">
+    </div>
+
+    <div class="dashboard">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Properti 1">
+            <h3>Rumah Minimalis di Jakarta</h3>
+            <p>Rp 1.500.000.000</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Properti 2">
+            <h3>Apartemen Mewah di Surabaya</h3>
+            <p>Rp 2.000.000.000</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Properti 3">
+            <h3>Rumah Cluster di Bandung</h3>
+            <p>Rp 1.200.000.000</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Properti. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
